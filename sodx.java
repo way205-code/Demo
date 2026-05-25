@@ -8,13 +8,18 @@ public class sodx {public static void main(String[] args) {
     int a = sc.nextInt();
     sc.nextLine();
     int sodao = 0;
-     int kq = sodao;
+    int temp = 0;
+     int kq =0;
+    int ss = a;
     while (a >0) {
-        sodao = sodao * 10 + a % 10;
+        temp = a % 10;
+        kq = kq *10 + temp;
         a /= 10;
        
         }
-    if (a == kq){
+        
+
+    if (ss == kq){
         System.out.println("la so dx");
     }
 
