@@ -11,11 +11,12 @@ public class songuyento {public static void main(String[] args) {
     if (n <= 1) {
         snt = false;
 
-    }
-    for (int i = 2; i < Math.sqrt(n); i++) {
-        if (n % i == 0) {
-            snt = false;
-            break;
+    } else {
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                snt = false;
+                break;
+            }
         }
     }
     if (snt) {
